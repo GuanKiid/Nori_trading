@@ -3,66 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nori Trading | Professional Cleaning Chemicals</title>
-<link rel="stylesheet" href="css/style.css">
+<title>Nori Trading | Industrial Cleaning Chemicals</title>
+
+<meta name="description" content="Nori Trading and Projects manufactures industrial and household cleaning chemicals in South Africa. MSDS compliant products available for wholesale.">
+
+<link rel="stylesheet" href="styles.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
   <div class="logo">Nori Trading</div>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="#products">Products</a>
+    <a href="#wholesale">Wholesale</a>
+    <a href="#investor">Investors</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h1>Professional Cleaning Solutions</h1>
-  <p>Industrial & Household Chemical Manufacturing</p>
-  <div class="cta-buttons">
-    <a href="products.html" class="btn primary">View Products</a>
-    <a href="assets/Nori_Trading_Investor_Brochure.pdf" class="btn secondary" download>Download Brochure</a>
-  </div>
+  <h1>Professional Industrial & Household Cleaning Solutions</h1>
+  <p>Manufactured in South Africa | MSDS Compliant | Wholesale Available</p>
+  <a href="#products" class="btn">View Products</a>
 </section>
 
 <section class="stats">
-  <div class="stat">
+  <div>
     <h2 class="counter" data-target="10">0</h2>
     <p>Core Products</p>
   </div>
-  <div class="stat">
+  <div>
     <h2 class="counter" data-target="100">0</h2>
     <p>% MSDS Compliant</p>
   </div>
-  <div class="stat">
+  <div>
     <h2 class="counter" data-target="24">0</h2>
-    <p>Hour Emergency Support</p>
+    <p>Hour Support</p>
   </div>
 </section>
 
-<section class="compliance">
-  <h2>Compliance & Safety</h2>
-  <p>All products are supported by MSDS documentation and comply with chemical safety standards.</p>
+<section id="products">
+<h2>Our Product Range</h2>
+
+<div class="filter-buttons">
+  <button onclick="filterProducts('all')">All</button>
+  <button onclick="filterProducts('industrial')">Industrial</button>
+  <button onclick="filterProducts('household')">Household</button>
+</div>
+
+<div class="products">
+
+<div class="product-card industrial">
+  <h3>Heavy Duty Degreaser</h3>
+  <p>Industrial grease remover</p>
+  <a href="MSDS_DEGREASER.pdf" class="btn small">Download MSDS</a>
+</div>
+
+<div class="product-card industrial">
+  <h3>Thick Bleach</h3>
+  <p>Powerful disinfectant</p>
+  <a href="MSDS_SAFETY_DATA_SHEET.pdf" class="btn small">Download MSDS</a>
+</div>
+
+<div class="product-card household">
+  <h3>Pine Gel</h3>
+  <p>Multi-surface cleaner</p>
+</div>
+
+<div class="product-card household">
+  <h3>Dishwasher Liquid</h3>
+  <p>Grease cutting formula</p>
+</div>
+
+<div class="product-card household">
+  <h3>Window Cleaner</h3>
+  <p>Streak free shine</p>
+</div>
+
+<div class="product-card industrial">
+  <h3>Toilet Bowl Cleaner</h3>
+  <p>Heavy duty sanitation</p>
+</div>
+
+<div class="product-card industrial">
+  <h3>Multi Purpose Cleaner</h3>
+  <p>Commercial grade cleaner</p>
+</div>
+
+<div class="product-card industrial">
+  <h3>Blood Stain Remover</h3>
+  <p>Professional stain removal</p>
+</div>
+
+</div>
+</section>
+
+<section id="wholesale">
+<h2>Bulk Order Calculator</h2>
+
+<input type="number" id="units" placeholder="Units">
+<input type="number" id="price" placeholder="Price per unit">
+<button onclick="calculateTotal()">Calculate</button>
+
+<h3>Total: R <span id="total">0</span></h3>
+
+</section>
+
+<section id="investor">
+<h2>Investor Materials</h2>
+<a href="brochure.pdf" class="btn">Download Brochure</a>
+<a href="pitchdeck.pptx" class="btn">Download Pitch Deck</a>
+
+<div class="projection">
+  <h3>Market Expansion Plan</h3>
+  <p>Operating in Limpopo with planned expansion to Gauteng & Mpumalanga.</p>
+  <p>Supplying 50 stores × 200 units = R500,000+ potential monthly revenue.</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Plot 059 Dalmada, Polokwane, 0700</p>
+<p>Phone: 066 322 5828</p>
+<p>Email: rudzaninori@gmail.com</p>
 </section>
 
 <footer>
-  <p>Plot 059 Dalmada, Polokwane, 0700</p>
-  <p>Phone: 066 322 5828 | Email: rudzaninori@gmail.com</p>
+  <p>© 2026 Nori Trading and Projects (Pty) Ltd</p>
 </footer>
 
-<!-- Floating Contact Button -->
-<div class="floating-contact">
-  <button class="main-btn"><i class="fas fa-comments"></i></button>
-  <div class="contact-options">
-    <a href="tel:0663225828"><i class="fas fa-phone"></i></a>
-    <a href="mailto:rudzaninori@gmail.com"><i class="fas fa-envelope"></i></a>
-    <a href="https://wa.me/27663225828" target="_blank"><i class="fab fa-whatsapp"></i></a>
-  </div>
+<div class="floating">
+  <a href="tel:0663225828"><i class="fas fa-phone"></i></a>
+  <a href="mailto:rudzaninori@gmail.com"><i class="fas fa-envelope"></i></a>
+  <a href="https://wa.me/27663225828" target="_blank"><i class="fab fa-whatsapp"></i></a>
 </div>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
