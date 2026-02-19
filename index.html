@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nori Trading & Projects (Pty) Ltd | Professional Cleaning Chemicals</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+</head>
 
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">Nori Trading & Projects (Pty) Ltd</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#compliance">Compliance</a>
+      <a href="#distribution">Distribution</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Professional Household & Industrial Cleaning Solutions</h1>
+    <p>Manufacturing and distributing high-performance detergents, disinfectants and industrial degreasers across South Africa.</p>
+    <a href="#products" class="btn-primary">View Product Catalogue</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2>Company Profile</h2>
+    <p>Nori Trading and Projects (Pty) Ltd is a South African manufacturer and distributor of professional-grade cleaning chemicals.</p>
+    <p>We supply household, commercial, and industrial sectors with compliant, MSDS-certified cleaning products formulated for performance, safety and reliability.</p>
+    <p><strong>Location:</strong> Plot 059 Dalmada, Polokwane, 0700</p>
+    <p><strong>Emergency Contact:</strong> 066 322 5828 (24hrs)</p>
+  </div>
+</section>
+
+<section id="products" class="section grey">
+  <div class="container">
+    <h2>Product Catalogue</h2>
+
+    <div class="product-grid">
+
+      <!-- Kitchen & Dishwashing -->
+      <div class="card" onclick="openModal('dishwasher')">
+        <h3>Dishwasher Liquid</h3>
+        <p>Biodegradable anionic detergent with lemon fresh aroma.</p>
+      </div>
+
+      <div class="card" onclick="openModal('window')">
+        <h3>Window Cleaner</h3>
+        <p>Light-duty glass cleaner for crystal clear finish.</p>
+      </div>
+
+      <div class="card" onclick="openModal('handsoap')">
+        <h3>Hand Soap</h3>
+        <p>Liquid hand wash solution.</p>
+      </div>
+
+      <!-- Bathroom & Disinfectants -->
+      <div class="card" onclick="openModal('pinegel')">
+        <h3>Pine Gel (Green)</h3>
+        <p>Deep cleanser and deodorizer.</p>
+      </div>
+
+      <div class="card" onclick="openModal('bleach')">
+        <h3>Bleach</h3>
+        <p>Sodium hypochlorite disinfectant.</p>
+      </div>
+
+      <div class="card" onclick="openModal('thickbleach')">
+        <h3>Thick Bleach</h3>
+        <p>High-strength disinfecting bleach.</p>
+      </div>
+
+      <div class="card" onclick="openModal('toilet')">
+        <h3>Toilet Bowl Cleaner</h3>
+        <p>Bacteria-removing toilet cleaner.</p>
+      </div>
+
+      <!-- Industrial & Specialized -->
+      <div class="card" onclick="openModal('degreaser')">
+        <h3>Degreaser</h3>
+        <p>Industrial & household oven degreaser gel.</p>
+      </div>
+
+      <div class="card" onclick="openModal('multipurpose')">
+        <h3>Multi-Purpose Cleaner</h3>
+        <p>Cream-based ammonia cleaner.</p>
+      </div>
+
+      <div class="card" onclick="openModal('blood')">
+        <h3>Blood Stain Remover</h3>
+        <p>Ethanol-based disinfectant solution.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="compliance" class="section">
+  <div class="container">
+    <h2>Compliance & Safety Standards</h2>
+    <p>All products are manufactured in accordance with MSDS documentation and chemical safety standards.</p>
+    <ul>
+      <li>✔ OSHA Hazard Communication Compliance</li>
+      <li>✔ Sodium Hypochlorite Regulated Use</li>
+      <li>✔ Proper Labeling & Batch Control</li>
+      <li>✔ Emergency Contact & Handling Instructions</li>
+    </ul>
+  </div>
+</section>
+
+<section id="distribution" class="section grey">
+  <div class="container">
+    <h2>Bulk Supply & Distribution</h2>
+    <p>We supply wholesalers, retailers, cleaning companies and industrial facilities.</p>
+    <p>Available in bulk packaging for commercial distribution.</p>
+    <p>Custom supply agreements available upon request.</p>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> Plot 059 Dalmada, Polokwane, 0700</p>
+    <p><strong>Phone:</strong> 066 322 5828</p>
+    <p><strong>Email:</strong> rudzaninori@gmail.com</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2024 Nori Trading and Projects (Pty) Ltd</p>
+  </div>
+</footer>
+
+<!-- Floating Contact -->
+<div class="floating">
+  <a href="tel:0663225828">📞</a>
+  <a href="mailto:rudzaninori@gmail.com">✉</a>
+  <a href="https://wa.me/27663225828" target="_blank">💬</a>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+</body>
+</html>
